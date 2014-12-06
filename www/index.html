@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css"/>
+    <link rel="stylesheet" href="css/application.css"/>
 
 
     <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
@@ -20,39 +21,26 @@
 
 <body>
 
-<!-- Start of first page -->
 <div data-role="page" id="foo">
 
     <div data-role="header">
-        <h1>Foo</h1>
-    </div><!-- /header -->
+        <h1>Water Transport Safety</h1>
+    </div>
 
-    <div data-role="content">
-        <li><a href="safety_tips.html">Safety Tips</a></li>
-        <p>View internal page called <a href="#bar">bar</a></p>
-    </div><!-- /content -->
-
-    <div data-role="footer">
-        <h4>Page Footer</h4>
-    </div><!-- /footer -->
-</div><!-- /page -->
-
-
-<!-- Start of second page -->
-<div data-role="page" id="bar">
-
-    <div data-role="header">
-        <h1>Bar</h1>
-    </div><!-- /header -->
-
-    <div data-role="content">
-        <p>I'm the second in the source order so I'm hidden when the page loads. I'm just shown if a link that references my ID is beeing clicked.</p>
-        <p><a href="#foo">Back to foo</a></p>
-    </div><!-- /content -->
+    <div data-role="content" class="main-menu">
+        <p>&nbsp;</p>
+        <a href="am_i_safe.html" class="ui-btn ui-btn-inline ui-btn-icon-left ui-icon-arrow-r">Am I safe?</a><br>
+        <a href="safety_tips.html" class="ui-btn ui-btn-inline ui-btn-icon-left ui-icon-arrow-r">Safety Tips</a><br>
+        <a href="vessel_time_table.html" class="ui-btn ui-btn-inline ui-btn-icon-left ui-icon-arrow-r">Vessel Time Table</a><br>
+        <a href="complain_and_feedback.html" class="ui-btn ui-btn-inline ui-btn-icon-left ui-icon-arrow-r">Complain & Feedback</a><br>
+        <a href="weather_forecast.html" class="ui-btn ui-btn-inline ui-btn-icon-left ui-icon-arrow-r">Weather forecast</a>
+        <!-- todo: <p>Search</p>-->
+    </div>
 
     <div data-role="footer">
         <h4>Page Footer</h4>
-    </div><!-- /footer -->
-</div><!-- /page -->
+    </div>
+</div>
+
 </body>
 </html>

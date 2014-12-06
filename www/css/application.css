@@ -1,0 +1,10 @@
+.main-menu a {
+    border: 0 !important;
+    background: none !important;
+}
+.main-menu a:focus {
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -o-box-shadow: none;
+    -webkit-box-shadow: none;
+}
