@@ -13,6 +13,7 @@
 
     <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
     <script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
+    <script type="text/javascript" src="js/Chart.js"></script>
     <script type="text/javascript" src="js/application.js"></script>
 
     <script type="text/javascript" src="js/index.js"></script>
@@ -53,16 +54,42 @@
 <div data-role="page" id="safety-tips">
 
     <div data-role="header">
-        <h1>Bar</h1>
+        <h1>Safety Tips</h1>
     </div><!-- /header -->
 
-    <div data-role="content">
-        <p>I'm the second in the source order so I'm hidden when the page loads. I'm just shown if a link that references my ID is beeing clicked.</p>
-        <p><a href="#home-page">Back to home</a></p>
-    </div><!-- /content -->
+    <div role="main" class="ui-content">
+        <div data-role="tabs">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#fragment-1" id="Tips">Tips</a></li>
+                    <li><a href="#fragment-2" id="Statistics">Statistics</a></li>
+                </ul>
+            </div>
+            <div id="fragment-1">
+                <div data-role="content">
+                    <li>Tips 1</li>
+                    <li>Tips 2</li>
+                    <li>Tips 3</li>
+                </div><!-- /content -->
+            </div>
+            <div id="fragment-2">
+                <div data-role="content">
+                    <canvas id="chart-area" width= "300px" height= "300px" style="float: left;"></canvas>
+                    <div class="drop" style="float: right;">
+                        <select>
+                            <option value="volvo" selected>Last Year</option>
+                            <option value="saab">Last Two Years</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <p><a href="index.html">Home</a></p>
 
     <div data-role="footer">
-        <h4>Page Footer</h4>
+        <h4>Safety Tips Footer</h4>
     </div><!-- /footer -->
 </div><!-- /page -->
 </body>
