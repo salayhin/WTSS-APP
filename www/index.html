@@ -27,14 +27,19 @@
 <div data-role="page" id="home-page">
 
     <div data-role="header">
-        <h1>Foo</h1>
+        <h1>Water Transport Safety</h1>
     </div><!-- /header -->
 
     <div data-role="content">
-        <li><a href="safety_tips.html">Safety Tips</a></li>
-        <p>View internal page called <a href="#bar">bar</a></p>
 
-        <p><a href="#safety-tips"><span><span></span></span>Safety Tips</a></p>
+        <div class="main-menu">
+            <div><a href="#am-i-safe"><span><span></span></span>Am I Safe?</a></div>
+            <div><a href="#safety-tips"><span><span></span></span>Safety Tips</a></div>
+            <div><a href="#vessel-time-table"><span><span></span></span>Vessel Time Table</a></div>
+            <div><a href="#complain-and-feedback"><span><span></span></span>Complain & Feedback</a></div>
+            <div><a href="#weather-forecast"><span><span></span></span>Weather Forecast</a></div>
+            <!-- TODO: <p><a href="#search"><span><span></span></span>Safety Tips</a></div>-->
+        </div>
 
     </div><!-- /content -->
 
@@ -53,7 +58,7 @@
 
     <div data-role="content">
         <p>I'm the second in the source order so I'm hidden when the page loads. I'm just shown if a link that references my ID is beeing clicked.</p>
-        <p><a href="#foo">Back to foo</a></p>
+        <p><a href="#home-page">Back to home</a></p>
     </div><!-- /content -->
 
     <div data-role="footer">
