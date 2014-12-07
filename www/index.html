@@ -27,7 +27,7 @@
 <!-- Start of first page -->
 <div data-role="page" id="home-page">
 
-    <div data-role="header">
+    <div data-role="header" class="header">
         <h1>Water Transport Safety</h1>
     </div><!-- /header -->
 
@@ -45,7 +45,7 @@
     </div><!-- /content -->
 
     <div data-role="footer">
-        <h4>Page Footer</h4>
+        <h4>Copyright Pi 2014</h4>
     </div><!-- /footer -->
 </div><!-- /page -->
 
@@ -53,8 +53,9 @@
 <!-- Start of second page -->
 <div data-role="page" id="safety-tips">
 
-    <div data-role="header">
+    <div data-role="header" class="header">
         <h1>Safety Tips</h1>
+        <a href="#home-page" class="ui-btn ui-icon-home ui-btn-icon-left home-button"></a>
     </div><!-- /header -->
 
     <div role="main" class="ui-content">
@@ -74,23 +75,83 @@
             </div>
             <div id="fragment-2">
                 <div data-role="content">
-                    <canvas id="chart-area" width= "300px" height= "300px" style="float: left;"></canvas>
-                    <div class="drop" style="float: right;">
+                    
+                    <div class="drop">
                         <select>
-                            <option value="volvo" selected>Last Year</option>
+                            <option value="volvo" selected>Last One Year</option>
                             <option value="saab">Last Two Years</option>
                         </select>
                     </div>
+
+                    <img src="img/pi.png" alt=""/>
                 </div>
             </div>
         </div>
     </div>
 
-    <p><a href="index.html">Home</a></p>
-
     <div data-role="footer">
-        <h4>Safety Tips Footer</h4>
+        <h4>Copyright Pi 2014</h4>
     </div><!-- /footer -->
 </div><!-- /page -->
+
+
+
+<div data-role="page" id="vessel-time-table">
+    <div data-role="header" class="header">
+        <h1>Reflow Table</h1>
+        <a href="#home-page" class="ui-btn ui-icon-home ui-btn-icon-left home-button"></a>
+    </div>
+
+    <div data-role="main" class="ui-content">
+        <p>Vessel Schedule</p>
+        <table data-role="table" class="ui-responsive">
+            <thead>
+            <tr>
+                <th>Vessel Name</th>
+                <th>Vessel ID</th>
+                <th>From</th>
+                <th>To</th>
+                <th>Time</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Sundarban</td>
+                <td>VS001</td>
+                <td>Dhaka</td>
+                <td>Barishal</td>
+                <td>6.30 PM</td>
+            </tr>
+            <tr>
+                <td>Sonar Tori</td>
+                <td>VS0050</td>
+                <td>dhaka</td>
+                <td>Barishal</td>
+                <td>10.00 AM</td>
+            </tr>
+            <tr>
+                <td>Sonar Tori</td>
+                <td>VS0052</td>
+                <td>Barishal</td>
+                <td>Dhaka</td>
+                <td>11:00 AM</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div data-role="footer">
+        <h4>Copyright Pi 2014</h4>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
 </body>
 </html>

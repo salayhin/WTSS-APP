@@ -15,4 +15,21 @@
     color: #555;
     text-decoration: none;
 }
+.header {
+    height: 37px;
+}
+.home-button {
+    display: inline-block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 25px;
+    height: 37px;
+}
 
+
+/* vessel-time-table */
+#vessel-time-table tr {
+    border-top: 1px solid #777777;
+}
+/* ./ vessel-time-table */
