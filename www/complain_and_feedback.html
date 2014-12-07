@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Water Transport Safety</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css"/>
+    <link rel="stylesheet" href="css/bootstrap-3.3.1.min.css"/>
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css"/>
+
+
+    <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
+    <script type="text/javascript" src="js/application.js"></script>
+    <script type="text/javascript" src="js/Chart.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript">
+        app.initialize();
+    </script>
+</head>
+
+<body>
+
+<!-- Start of first page -->
+<div data-role="page" id="complain-and-feedback">
+
+    <div data-role="header">
+        <h1>Complains & Feedback</h1>
+    </div><!-- /header -->
+
+    <div role="main" class="ui-content">
+        <div data-role="tabs">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#fragment-complain" id="complain">Complains</a></li>
+                    <li><a href="#fragment-feedback" id="feedback">Feedback</a></li>
+                </ul>
+            </div>
+            <div id="fragment-complain">
+                <div data-role="content">
+                    <form method="post" action="">
+                        <label for="complain_title">Title:</label>
+                        <input type="text" name="complain_title" id="complain-title">
+                        <label for="description">Description:</label>
+                        <textarea name="description" id="description"></textarea><br />
+                        <!--<button class="ui-btn">Commit Your Complain</button>-->
+                        <a style="background: cadetblue; color: #FFFFFF;" href="#" class="ui-btn">Commit Your Complain</a>
+                    </form>
+                </div><!-- /content -->
+            </div>
+            <div id="fragment-feedback">
+                <div data-role="content">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <p><a href="index.html">Home</a></p>
+
+    <div data-role="footer">
+        <h4>Safety Tips Footer</h4>
+    </div><!-- /footer -->
+</div><!-- /page -->
+</body>
+
+</html>
