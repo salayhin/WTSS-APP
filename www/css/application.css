@@ -1,0 +1,13 @@
+#home-page a {
+    vertical-align: top;
+}
+#home-page a span {
+    padding-top: 2px;
+    display: inline-block;
+}
+#home-page a span span {
+    background: url("../images/icons-png/arrow-r-black.png") no-repeat;
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+}

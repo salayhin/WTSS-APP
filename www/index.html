@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css"/>
+    <link rel="stylesheet" href="css/application.css"/>
+    <link rel="stylesheet" href="css/bootstrap-3.3.1.min.css"/>
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css"/>
 
 
     <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
@@ -21,7 +24,7 @@
 <body>
 
 <!-- Start of first page -->
-<div data-role="page" id="foo">
+<div data-role="page" id="home-page">
 
     <div data-role="header">
         <h1>Foo</h1>
@@ -30,6 +33,9 @@
     <div data-role="content">
         <li><a href="safety_tips.html">Safety Tips</a></li>
         <p>View internal page called <a href="#bar">bar</a></p>
+
+        <p><a href="#safety-tips"><span><span></span></span>Safety Tips</a></p>
+
     </div><!-- /content -->
 
     <div data-role="footer">
@@ -39,7 +45,7 @@
 
 
 <!-- Start of second page -->
-<div data-role="page" id="bar">
+<div data-role="page" id="safety-tips">
 
     <div data-role="header">
         <h1>Bar</h1>
