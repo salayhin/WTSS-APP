@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Water Transport Safety</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css"/>
+    <link rel="stylesheet" href="css/bootstrap-3.3.1.min.css"/>
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css"/>
+
+
+    <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
+    <script type="text/javascript" src="js/application.js"></script>
+    <script type="text/javascript" src="js/Chart.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript">
+        app.initialize();
+    </script>
+    <style type="text/css">
+        th {
+            border-bottom: 1px solid #d6d6d6;
+        }
+        tr:nth-child(even) {
+            background: #e9e9e9;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- Start of first page -->
+<div data-role="page" id="weather-forecast">
+
+    <div data-role="header">
+        <h1>Weather Forecast</h1>
+    </div><!-- /header -->
+
+    <div role="main" class="ui-content">
+        <table data-role="table" data-mode="columntoggle" class="ui-responsive" id="myTable">
+            <thead>
+            <tr>
+                <th>Location</th>
+                <th data-priority="1">Weather Info</th>
+                <th data-priority="2">Status</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Dhaka</td>
+                <td>30 deg</td>
+                <td>Sunny</td>
+            </tr>
+            <tr>
+                <td>Barishal</td>
+                <td>27 deg</td>
+                <td>Cloudy</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <p><a href="index.html">Home</a></p>
+
+    <div data-role="footer">
+        <h4>Weather Forecast Footer</h4>
+    </div><!-- /footer -->
+</div><!-- /page -->
+</body>
+
+</html>
