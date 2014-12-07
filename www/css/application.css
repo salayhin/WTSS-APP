@@ -1,3 +1,8 @@
+body * {
+    -webkit-transition: 0s !important; /* For Safari 3.1 to 6.0 */
+    transition: 0s !important;
+}
+
 #home-page a {
     vertical-align: top;
 }
