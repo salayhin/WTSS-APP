@@ -275,6 +275,50 @@
 
 
 
+<div data-role="page" id="complain-and-feedback">
+
+    <div data-role="header">
+        <h1>Complains & Feedback</h1>
+        <a href="#home-page" class="ui-btn ui-icon-home ui-btn-icon-left home-button"></a>
+    </div><!-- /header -->
+
+    <div role="main" class="ui-content">
+        <div data-role="tabs">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#fragment-complain" id="complain">Complains</a></li>
+                    <li><a href="#fragment-feedback" id="feedback">Feedback</a></li>
+                </ul>
+            </div>
+            <div id="fragment-complain">
+                <div data-role="content">
+                    <form method="post" action="">
+                        <label for="complain_title">Title:</label>
+                        <input type="text" name="complain_title" id="complain-title">
+                        <label for="description">Description:</label>
+                        <textarea name="description" id="description"></textarea><br />
+                        <!--<button class="ui-btn">Commit Your Complain</button>-->
+                        <a style="background: cadetblue; color: #FFFFFF;" href="#" class="ui-btn">Commit Your Complain</a>
+                    </form>
+                </div><!-- /content -->
+            </div>
+            <div id="fragment-feedback">
+                <div data-role="content">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div data-role="footer">
+        <h4>Copyright Pi 2014</h4>
+    </div><!-- /footer -->
+</div><!-- /page -->
+
+
+
+
+
+
 
 </body>
 </html>
