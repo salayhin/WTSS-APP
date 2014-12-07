@@ -6,12 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css"/>
+    <link rel="stylesheet" href="css/bootstrap-3.3.1.min.css"/>
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css"/>
 
 
     <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
     <script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
     <script type="text/javascript" src="js/application.js"></script>
-
+    <script type="text/javascript" src="js/Chart.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
     <script type="text/javascript">
         app.initialize();
@@ -27,17 +29,83 @@
         <h1>Safety Tips</h1>
     </div><!-- /header -->
 
-    <div data-role="content">
-        <li>Life Jacket</li>
-        <li>Life Jacket</li>
-        <li>Life Jacket</li>
-        <p><a href="index.html">Home</a></p>
-    </div><!-- /content -->
+    <div role="main" class="ui-content">
+        <div data-role="tabs">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#fragment-1" id="Tips">Tips</a></li>
+                    <li><a href="#fragment-2" id="Statistics">Statistics</a></li>
+                </ul>
+            </div>
+            <div id="fragment-1">
+                <div data-role="content">
+                    <li>Tips 1</li>
+                    <li>Tips 2</li>
+                    <li>Tips 3</li>
+                </div><!-- /content -->
+            </div>
+            <div id="fragment-2">
+                <div data-role="content">
+                    <canvas id="chart-area" width= "300px" height= "300px" style="float: left;"></canvas>
+                    <div class="drop" style="float: right;">
+                        <select>
+                            <option value="volvo" selected>Last Year</option>
+                            <option value="saab">Last Two Years</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <p><a href="index.html">Home</a></p>
 
     <div data-role="footer">
         <h4>Safety Tips Footer</h4>
     </div><!-- /footer -->
 </div><!-- /page -->
-
 </body>
+
+<script type="text/javascript">
+
+    var pieData = [
+        {
+            value: 300,
+            color:"#F7464A",
+            highlight: "#FF5A5E",
+            label: "Red"
+        },
+        {
+            value: 50,
+            color: "#46BFBD",
+            highlight: "#5AD3D1",
+            label: "Green"
+        },
+        {
+            value: 100,
+            color: "#FDB45C",
+            highlight: "#FFC870",
+            label: "Yellow"
+        },
+        {
+            value: 40,
+            color: "#949FB1",
+            highlight: "#A8B3C5",
+            label: "Grey"
+        },
+        {
+            value: 120,
+            color: "#4D5360",
+            highlight: "#616774",
+            label: "Dark Grey"
+        }
+
+    ];
+
+
+    $(document).ready(function(){
+        var ctx = document.getElementById("chart-area").getContext("2d");
+        var chart = new Chart(ctx).Pie(pieData);
+    });
+</script>
 </html>
