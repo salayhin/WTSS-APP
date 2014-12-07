@@ -11,3 +11,8 @@
     width: 22px;
     height: 22px;
 }
+.main-menu a, .main-menu a:visited, .main-menu a:hover {
+    color: #555;
+    text-decoration: none;
+}
+
